@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelMaker</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;700&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="styles.css"> 
+    
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Pixelz</h1>
+    </header>
+    <div class="settings-box">
+        <div class="settings">
+            <label for="gridSize">Grid Size</label>
+            <input id="gridSize" type="range" value="10" min="10" max="40" oninput="this.nextElementSibling.value = this.value">
+            <output>10</output>
+        </div>
+        <div class="settings">
+            <label for="colorChange">Color</label>
+            <input id="colorChange" type="color">
+        </div>
+        <div class="settings">
+            <label for="eraser">Eraser</label>
+            <input id="eraser" type="checkbox">
+        </div>
+    </div>
+    <div id="outerGrid"><div id="pixelArtContainer" class="pixel-grid"></div></div>
+    
+    <div class="btnDiv"><button id="exportBtn">Export as Image</button></div>
+    
+</body>
+</html>
